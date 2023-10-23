@@ -1,7 +1,12 @@
 ---
-title: about
+title: About
 date: 2023-10-23 14:23:30
-type: "about"
+type: about
 ---
+## 欢迎来到 Kieran Kihn 的
 
-# Hello!
+我的联系方式:
+- [邮箱](mailto:kierankihn@protonmail.com)
+- [Telegram](https://t.me/doubleki437461)
+- [Github](https://github.com/kierankihn)
+- [Twitter](https://twitter.com/doubleki437461)
