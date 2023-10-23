@@ -112,7 +112,7 @@ giscus:
   category: Announcements
   category_id: DIC_kwDOKj2GYs4CaXFk
   # Available values: pathname | url | title | og:title
-  mapping: pathname
+  mapping: title
   # Available values: 0 | 1 
   reactions_enabled: 1
    # Available values: 0 | 1 
