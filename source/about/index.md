@@ -3,7 +3,7 @@ title: About
 date: 2023-10-23 14:23:30
 type: about
 ---
-## 欢迎来到 Kieran Kihn 的
+## 欢迎来到 Kieran Kihn 的小窝
 
 我的联系方式:
 - [邮箱](mailto:kierankihn@protonmail.com)
