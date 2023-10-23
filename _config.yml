@@ -123,3 +123,8 @@ giscus:
   lang: zh-CN
   # Available value: anonymous
   crossorigin: anonymous
+
+netlify_cms:
+  backend:
+    name: git-gateway
+    branch: master
