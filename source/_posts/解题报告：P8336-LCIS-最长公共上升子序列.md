@@ -15,13 +15,13 @@ tags: 动态规划, 线性dp
 考虑转移：
 
 - 当 $a_i \not = b_j$ 时，显然有 $dp_{i, j} = dp_{i - 1, j}$
-- 当 $a_i = b_j$ 时，显然有 $dp_{i, j} = \min \limits_{1 \le k < j, \ b_k < b_j} \{dp_{i - 1, k}\}$
+- 当 $a_i = b_j$ 时，显然有 $dp_{i, j} = \min \limits_{1 \le k < j, \  b_k < b_j} (dp_{i - 1, k})$
 
 暴力转移的时间复杂度为 $O(n^3)$
 
 考虑优化 $a_i = b_j$ 时的转移
 
-显然因为 $a_i = b_j$，上式等价于 $dp_{i, j} = \min \limits_{1 \le k < j, \ b_k < a_i} \{dp_{i - 1, k}\}$
+因为 $a_i = b_j$，上式显然等价于 $dp_{i, j} = \min \limits_{1 \le k < j, \  b_k < a_i} (dp_{i - 1, k})$
 
 那么对于每一个 $i$ ，转移时所需要的决策集合是只增不减的，我们可以在转移的同时维护决策集合（中的最优方案），这样转移只需 $O(1)$ 判断即可
 
@@ -29,7 +29,7 @@ tags: 动态规划, 线性dp
 
 那么最后的转移方程即为
 
-$$dp_{j} = \min\{dp_{j}, val + 1\}, \ val = \min\limits_{1 \le k < j,\ b_k < a_i}\{dp_k\}$$
+$$dp_{j} = \min(dp_{j}, val + 1), \ val = \min\limits_{1 \le k < j,\ b_k < a_i}(dp_k)$$
 
 ## 代码
 
