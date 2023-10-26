@@ -29,6 +29,7 @@ categories:
 此处要注意 $u$ 的度数为 $1$ 的情况，$v$ 的度数为 $1$ 的情况并分类讨论
 
 则有如下转移方程
+
 $$
 dp_v = d_v + 
 \begin{cases}
@@ -36,6 +37,7 @@ dp_v = d_v +
 	\min(c(u, v), dp_u - \min(d_v, c(u, v))), & (du_u \not = 1)
 \end{cases}
 $$
+
 其中，$du_i$ 表示节点 $i$ 的度数
 
 ## 代码
@@ -124,4 +126,3 @@ int main()
     return 0;
 }
 ```
-
