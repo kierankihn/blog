@@ -33,7 +33,7 @@ categories:
 $$
 dp_v = d_v + 
 \begin{cases}
-	c(u, v), & (du_u = 1) \\
+	c(u, v), & (du_u = 1) \newline
 	\min(c(u, v), dp_u - \min(d_v, c(u, v))), & (du_u \not = 1)
 \end{cases}
 $$
