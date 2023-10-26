@@ -7,10 +7,11 @@ tags:
 categories:
   - 解题报告
 ---
-
 ## 题意
 
 给定两个字符串 $a, b$，求 $a, b$ 的最长公共上升子序列
+
+<!-- more -->
 
 ## 暴力
 
@@ -33,7 +34,9 @@ categories:
 
 那么最后的转移方程即为
 
-$$dp_{j} = \min(dp_{j}, val + 1), \ val = \min\limits_{1 \le k < j,\ b_k < a_i}(dp_k)$$
+$$
+dp_{j} = \min(dp_{j}, val + 1), \ val = \min\limits_{1 \le k < j,\ b_k < a_i}(dp_k)
+$$
 
 ## 代码
 
@@ -85,4 +88,3 @@ int main()
     return 0;
 }
 ```
-
