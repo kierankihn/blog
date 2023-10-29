@@ -18,6 +18,8 @@ tags:
 
 时间阶段是不断循环的圆（一天一天是循环的嘛），假如贝茜在时间 $N$ 和时间 $1$ 睡觉，那么她将得到时间 $1$ 的效用值。
 
+<!-- more -->
+
 ## 思路
 
 首先考虑如果时间不循环的做法
@@ -26,10 +28,12 @@ tags:
 
 可以有如下转移
 $$
-dp_{i, j, 0} = & \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \newline
-dp_{i, j, 1} = & \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} + v_i \right \rbrace
+\begin{align}
+dp_{i, j, 0} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \newline
+dp_{i, j, 1} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} + v_i \right \rbrace
+\end{align}
 $$
-初始状态为 $dp_{1, 0, 0} = dp_{1, 1, 1} = 0$, 其余均为 $-\infin$
+初始状态为 $dp_{1, 0, 0} = dp_{1, 1, 1} = 0$, 其余均为 $-\infty$
 
 考虑如何断环，第一个想法便是将原数组复制一遍到原数组后边，这样即可求出不再同一天睡觉的情况
 
