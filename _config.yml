@@ -149,3 +149,10 @@ neat_js:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
+
+
+# Security
+encrypt: # hexo-blog-encrypt
+  silent: true
+  tags:
+  - {name: private, password: passwd}
