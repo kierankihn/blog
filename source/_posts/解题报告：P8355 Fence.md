@@ -22,8 +22,8 @@ categories:
 显然有如下的暴力转移
 $$
 \begin{align}
-	dp_{i, j} & \leftarrow \min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace, & \left(\text{让第 }i \text{ 个人粉刷区间 } (k, j\rbrack \right), \newline
-	dp_{i, j} & \leftarrow dp_{i - 1, j}, & \left(\text{第 } i \text{ 个人不粉刷}\right), \newline
+	dp_{i, j} & \leftarrow \min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace, & \left(\text{让第 }i \text{ 个人粉刷区间 } (k, j\rbrack \right), \\
+	dp_{i, j} & \leftarrow dp_{i - 1, j}, & \left(\text{第 } i \text{ 个人不粉刷}\right), \\
 	dp_{i, j} & \leftarrow dp_{i, j - 1}, & \left(\text{第 } i \text{ 个人不粉刷}\right).
 \end{align}
 $$
@@ -32,7 +32,7 @@ $$
 对上式进行变形，可得
 $$
 \begin{align}
-\min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace = & \min \lbrace dp_{i - 1, k} + j \times cost_i - k \times cost_i \rbrace \newline
+\min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace = & \min \lbrace dp_{i - 1, k} + j \times cost_i - k \times cost_i \rbrace \\
                                       = & \min \lbrace dp_{i - 1, k} - k \times  cost_i \rbrace + j \times cost_i
 \end{align}
 $$

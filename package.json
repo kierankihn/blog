@@ -14,7 +14,6 @@
   "dependencies": {
     "hexo": "^7.0.0",
     "hexo-blog-encrypt": "^3.1.9",
-    "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-index-plus": "^1.0.0",
@@ -22,13 +21,11 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-neat": "^1.0.9",
-    "hexo-netlify-cms": "^3.0.0",
     "hexo-next-giscus": "^1.2.0",
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-pandoc": "^0.4.0",
+    "hexo-renderer-markdown-it-plus": "^1.0.6",
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-next": "^8.18.2"
+    "hexo-theme-next": "^8.18.2",
+    "katex": "^0.16.9"
   }
 }

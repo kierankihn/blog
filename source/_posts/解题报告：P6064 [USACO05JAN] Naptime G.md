@@ -31,7 +31,7 @@ categories:
 可以有如下转移
 $$
 \begin{align}
-dp_{i, j, 0} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \newline
+dp_{i, j, 0} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \\
 dp_{i, j, 1} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} + v_i \right \rbrace
 \end{align}
 $$
