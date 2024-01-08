@@ -21,20 +21,20 @@ categories:
 
 显然有如下的暴力转移
 $$
-\begin{align}
+\begin{aligned}
 	dp_{i, j} & \leftarrow \min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace, & \left(\text{让第 }i \text{ 个人粉刷区间 } (k, j\rbrack \right), \\
 	dp_{i, j} & \leftarrow dp_{i - 1, j}, & \left(\text{第 } i \text{ 个人不粉刷}\right), \\
 	dp_{i, j} & \leftarrow dp_{i, j - 1}, & \left(\text{第 } i \text{ 个人不粉刷}\right).
-\end{align}
+\end{aligned}
 $$
 观察发现，瓶颈在于如何快速求出 $\min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace$
 
 对上式进行变形，可得
 $$
-\begin{align}
+\begin{aligned}
 \min \lbrace dp_{i - 1, k} + (j - k) \times cost_i \rbrace = & \min \lbrace dp_{i - 1, k} + j \times cost_i - k \times cost_i \rbrace \\
                                       = & \min \lbrace dp_{i - 1, k} - k \times  cost_i \rbrace + j \times cost_i
-\end{align}
+\end{aligned}
 $$
 即上式可以被分为两个部分，仅包含 $i, j$ 的和仅包含 $i, k$ 的部分，我们只需要求出 $\min \lbrace dp_{i - 1, k} - k \times  cost_i \rbrace$ 部分的最值即可
 
