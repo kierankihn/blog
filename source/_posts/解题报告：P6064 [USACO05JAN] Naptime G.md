@@ -30,10 +30,10 @@ categories:
 
 可以有如下转移
 $$
-\begin{align}
-dp_{i, j, 0} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \newline
+\begin{aligned}
+dp_{i, j, 0} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} \right \rbrace \\
 dp_{i, j, 1} & = \min \left \lbrace dp_{i - 1, j, 0}, \ dp_{i - 1, j, 1} + v_i \right \rbrace
-\end{align}
+\end{aligned}
 $$
 初始状态为 $dp_{1, 0, 0} = dp_{1, 1, 1} = 0$, 其余均为 $-\infty$
 

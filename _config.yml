@@ -156,3 +156,18 @@ encrypt: # hexo-blog-encrypt
   silent: true
   tags:
   - {name: private, password: passwd}
+
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  pre_class: highlight
+  plugins:
+    - plugin:
+      name: '@iktakahiro/markdown-it-katex'
+      enable: true
